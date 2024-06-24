@@ -1,0 +1,26 @@
+.logo {
+    transform: scale(0.8);
+}
+
+.navbar {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.navlink {
+    all: unset;
+    color: white;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-count: 3;
+    grid-column-gap: 3em;
+    column-gap: 3em;
+    justify-items: center;
+    align-items: center;
+}
