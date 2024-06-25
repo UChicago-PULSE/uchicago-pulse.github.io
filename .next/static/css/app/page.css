@@ -1,0 +1,92 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.page_title__3jonF {
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.page_main__GlU4n {
+    font-style: italic;
+    font-size: 4rem;
+}
+
+.page_sub__c05Js {
+    margin-top: -2.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.page_button__vnlhW {
+    all: unset;
+    transform: rotate(180deg);
+    font-size: 2rem;
+    font-weight: 100;
+    z-index: 2;
+}
+
+.page_backImg__3IaFX {
+    object-fit: cover;
+    z-index: 1;
+    margin-top: -3rem;
+    width: 100%;
+}
+
+.page_imgContainer__IR08o {
+    width: 100%; 
+    height: 100%;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
+}
+
+.page_subTitle__ftcAH {
+    font-size: 3rem;
+    margin-top: 5rem;
+    font-weight: 500;
+}
+
+.page_subMain__ckLsB {
+    margin-top: -2rem;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.page_titleDiv__FQW9k {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 90%;
+    justify-content: flex-end;
+}
+
+.page_subTwo__ID4Pu {
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -2rem;
+}
+
+.page_titlesRight__assAh{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.page_para__Iv0_Z {
+    font-weight: 200;
+    font-size: 1.5rem;
+    display: flex;
+    text-align: right;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-right: -10rem;
+    margin-top: 4rem;
+}

@@ -1,3 +1,88 @@
-body {
-    background-color: black;
+.title {
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.main {
+    font-style: italic;
+    font-size: 4rem;
+}
+
+.sub {
+    margin-top: -2.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.button {
+    all: unset;
+    transform: rotate(180deg);
+    font-size: 2rem;
+    font-weight: 100;
+    z-index: 2;
+}
+
+.backImg {
+    object-fit: cover;
+    z-index: 1;
+    margin-top: -3rem;
+    width: 100%;
+}
+
+.imgContainer {
+    width: 100%; 
+    height: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
+}
+
+.subTitle {
+    font-size: 3rem;
+    margin-top: 5rem;
+    font-weight: 500;
+}
+
+.subMain {
+    margin-top: -2rem;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.titleDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 90%;
+    justify-content: flex-end;
+}
+
+.subTwo {
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -2rem;
+}
+
+.titlesRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.para {
+    font-weight: 200;
+    font-size: 1.5rem;
+    display: flex;
+    text-align: right;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-right: -10rem;
+    margin-top: 4rem;
 }
