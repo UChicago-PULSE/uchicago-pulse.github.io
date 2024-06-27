@@ -1,0 +1,113 @@
+.cards {
+    display: flex;
+    width:fit-content;
+}
+
+.card{ 
+    margin: 1rem;
+    border-radius: 1rem;
+    background: radial-gradient(90% 90% at 50% 50%, rgba(255, 255, 255, 0.00001) -100%, rgba(255, 255, 255, 0.5) 300%);
+    box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.50) inset, -2px -2px 4px 0px rgba(255, 255, 255, 0.30) inset;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.upper {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+    margin-top: -1rem;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.topImage {
+    margin-top: -1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    .topImage {
+        margin-top: -2rem;
+    }
+
+    .title {
+        margin-top: -2.5rem;
+        font-size: 1.3rem;
+    }
+
+    .backImg {
+        max-height: 40vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .topImage {
+        margin-top: -1rem;
+    }
+
+    .title {
+        margin-top: 0rem;
+        font-size: 1.3rem;
+    }
+
+    .backImg {
+        max-height: 48vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .topImage {
+        margin-top: 1rem;
+    }
+
+    .title {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .backImg {
+        max-height: 52vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .topImage {
+        margin-top: 1rem;
+    }
+
+    .title {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .backImg {
+        max-height: 54vh;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .topImage {
+        margin-top: 2rem;
+    }
+
+    .title {
+        margin-top: 3rem;
+        font-size: 1.7rem;
+    }
+    .backImg {
+        max-height: 62vh;
+    }
+}

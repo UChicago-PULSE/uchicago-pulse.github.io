@@ -86,3 +86,9 @@
     margin-right: -10rem;
     margin-top: 4rem;
 }
+
+.cardTitle {
+    font-weight: 400;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
