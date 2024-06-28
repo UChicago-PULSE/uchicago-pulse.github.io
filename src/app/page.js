@@ -1,4 +1,5 @@
 import Cards from '@/app/components/cards';
+import Inverted from '@/app/components/invertedTexts';
 import styles from '@/app/page.module.css';
 import Image from 'next/image';
 import pulseAimg from '../../public/PULSE-A_PATCH.svg';
@@ -41,6 +42,36 @@ export default function Home() {
     }, 
   ]
 
+  let inverted_data = [
+    {
+        title: "Event Name 1",
+        image: "block",
+        subTitle: "",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+        imageWidth: "",
+        special: false,
+        left: true,
+    }, 
+    {
+        title: "Event Name 2",
+        image: "block",
+        subTitle: "",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+        imageWidth: "",
+        special: false,
+        left: false,
+    }, 
+    {
+        title: "Event Name 3",
+        image: "block",
+        subTitle: "",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+        imageWidth: "",
+        special: false,
+        left: true,
+    }
+  ]
+
   return (
     <>
         <div className={styles.title}>
@@ -68,6 +99,13 @@ export default function Home() {
             </p>
             <h1 className={styles.cardTitle}>Current Projects</h1>
             <Cards cards={card_data}/>
+
+            <h1 className={styles.cardTitle}>Outreach</h1>
+            <div className={styles.details}>
+                <p>Community outreach is core to UCSP's mission.</p>
+                <p style={{marginTop:'-1.6rem'}}>Read about our recent events below.</p>
+            </div>
+            <Inverted data={inverted_data} border={true} more={true}/>
         </div>
     </>
   );

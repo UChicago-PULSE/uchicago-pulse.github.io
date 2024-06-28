@@ -92,3 +92,10 @@
     font-size: 3rem;
     margin-top: 5rem;
 }
+
+.details {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin-top: -2rem;
+}

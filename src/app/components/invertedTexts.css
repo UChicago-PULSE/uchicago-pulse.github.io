@@ -1,0 +1,79 @@
+.greyBlock {
+    background-color: grey;
+    height: 100%;
+    width: 80vw;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+
+.left {
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.seg {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.text {
+    display:grid;
+    margin-top: -1.3rem;
+    width: 200%;
+}
+
+.segtitle {
+    font-size: 2rem;
+}
+
+.segdescrip {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: -1.4rem;
+}
+
+.right {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    .text {
+        text-align: right;
+    }
+
+    .greyBlock {
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+}
+
+.block {
+    border: white solid 2px;
+    border-radius: 2rem;
+    width: 70vw;
+    padding-bottom: 1rem;
+}
+
+.nonblock {
+    border-radius: 2rem;
+    width: 77vw;
+    padding-bottom: 3rem;
+}
+
+.linkend {
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    all:unset;
+}
