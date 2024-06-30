@@ -12,6 +12,7 @@ import nasa from '../../../public/nasa.svg';
 import pgs from '../../../public/pgs.svg';
 import spaceDy from '../../../public/spaceDy.svg';
 import spacex from '../../../public/spaceX.svg';
+import swab from '../../../public/swab.webp';
 
 function About() {
     return (
@@ -74,9 +75,13 @@ function About() {
                         <div className={styles.td}><Image src={caltech}/></div>
                     </div>
 
-                    <div className={styles.tr_image} style={{marginBottom: '5rem'}}>
+                    <div className={styles.tr_image}>
                         <div className={styles.td}><Image src={argonneLab}/></div>
                         <div className={styles.td}><Image src={fermi}/></div>
+                    </div>
+
+                    <div className={styles.tr_image} style={{marginBottom: '5rem'}}>
+                        <div className={styles.td}><Image src={swab}/></div>
                     </div>
                 </div>
                 </div>
