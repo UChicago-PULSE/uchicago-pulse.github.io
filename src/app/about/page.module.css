@@ -1,0 +1,74 @@
+.about {
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.title{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.Mtitle{
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.subDescription {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 90%;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8rem;
+}
+.tr_header {
+    display: flex;
+    padding: 5px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+.tr {
+    display: flex;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.tr_image {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 100;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    margin-right: -15rem;
+}
+
+.outcomes{
+    background-color: white;
+    color: black;
+    margin-left: -4rem;
+    margin-right: -4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    margin-bottom: -10rem;
+}
+
+.msub {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: right;
+    padding-left: 4rem;
+}

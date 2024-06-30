@@ -4,7 +4,7 @@ import Image from 'next/image';
 function Cards (props){
     return (
         <>
-            <div className="cards">
+            <div className="cards" id={props.grid ? 'grid_gap': ''}>
                 {
                     props.cards.map((dict, i) => {
                         return (
@@ -33,10 +33,17 @@ function Cards (props){
                                     </div>
                                 </div>  
                             ) : (
-                                <div key={i}>
-                                    <h1>{dict.title}</h1>
-                                    <h3>{dict.subtitle}</h3>
-                                    <p>{dict.details}</p>
+                                <div key={i} className="border_card">
+                                    <h1 className='ctitle'>{dict.title}</h1>
+                                    <h3 className='csubtitle'>{dict.subtitle}</h3>
+                                    <p className="details">{dict.details}</p>
+                                    {dict.link ? 
+                                        <a href="" style={{textDecoration:'underline', fontStyle:'italic', marginBottom: '1rem'}}>
+                                            Read More
+                                        </a>
+                                        :
+                                        <></>
+                                    }
                                 </div>
                             )
                         )

@@ -111,3 +111,37 @@
         max-height: 62vh;
     }
 }
+
+.border_card{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    column-gap: 10rem;
+    border: solid black 2px;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.details {
+    max-width: 20vw;
+}
+
+.ctitle {
+    font-weight: 300;
+    font-size:2.5rem;
+}
+
+.csubtitle {
+    width: 15vw;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: -1rem;
+}
+
+#grid_gap {
+    column-gap: 5vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

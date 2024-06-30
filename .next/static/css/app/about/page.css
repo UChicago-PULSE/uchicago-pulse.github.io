@@ -1,0 +1,77 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/about/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.page_about__WuQPe {
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.page_title__7_S0z{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.page_Mtitle__KuBbc{
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.page_subDescription__qL8zf {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 90%;
+}
+
+.page_table__vr0lJ {
+    display: table;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8rem;
+}
+.page_tr_header__hrUN1 {
+    display: flex;
+    padding: 5px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+.page_tr__WdJ76 {
+    display: flex;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.page_tr_image__w9Grg {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 100;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    margin-right: -15rem;
+}
+
+.page_outcomes__u_Wqp{
+    background-color: white;
+    color: black;
+    margin-left: -4rem;
+    margin-right: -4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    margin-bottom: -10rem;
+}
+
+.page_msub__k7AQs {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: right;
+    padding-left: 4rem;
+}

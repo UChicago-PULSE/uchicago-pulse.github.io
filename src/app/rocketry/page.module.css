@@ -1,0 +1,44 @@
+.rocketry {
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.title{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.greyBlock {
+    background-color: lightgrey;
+    width: 100%;
+    height: 40vh;
+}
+
+.subDescription {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 90%;
+    float: right;
+}
+
+.block {
+    display: flex;
+    margin-top:10em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.subTitle {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1050px){
+    #spaces {
+        margin-left: 3rem;
+    }
+}

@@ -105,7 +105,7 @@ export default function Home() {
                 <p>Community outreach is core to UCSP's mission.</p>
                 <p style={{marginTop:'-1.6rem'}}>Read about our recent events below.</p>
             </div>
-            <Inverted data={inverted_data} border={true} more={true}/>
+            <Inverted data={inverted_data} border={true} more={true} imgChange={{width: '80vw', round: '2rem'}}/>
         </div>
     </>
   );

@@ -2,6 +2,29 @@
     transform: scale(0.8);
 }
 
+#labs:hover{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#labs:hover #dropdown{
+    display: grid;
+    position:absolute;
+    margin-top: 1rem;
+}
+
+#labs:hover li {
+    all:unset;
+    margin-left:-1rem;
+    margin-top: 1rem;
+}
+
+#dropdown {
+    display: none;
+}
+
 .navbar {
     display: flex;
     margin-top: 2rem;
@@ -23,4 +46,12 @@
     column-gap: 3em;
     justify-items: center;
     align-items: center;
+}
+
+#red .navlink {
+    color: white;
+}
+
+#white .navlink{
+    color: black;
 }
