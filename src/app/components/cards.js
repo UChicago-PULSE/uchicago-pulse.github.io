@@ -16,7 +16,6 @@ function Cards (props){
                                         style = {{
                                             filter: 'blur(54px)',
                                             objectFit: 'cover',
-                                            width: '22vw',
                                         }}
                                         className='backImg'
                                     />
@@ -24,9 +23,6 @@ function Cards (props){
                                         <Image
                                             src={dict.img}
                                             alt="circle Image"
-                                            style={{
-                                                width: '20vw',
-                                            }}
                                             className='topImage'
                                         />
                                         <h2 className='title'>{dict.title}</h2>

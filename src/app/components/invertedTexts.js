@@ -1,4 +1,5 @@
 import '@/app/components/invertedTexts.css';
+import LaunchSched from '@/app/components/launchSchedule';
 import Image from 'next/image';
 
 function Inverted(props) {
@@ -18,16 +19,16 @@ function Inverted(props) {
                                     <div className={each.left ? "left" : "right"}>
                                         {each.image == "block" ? 
                                             <div className='grid-display'>
-                                                <div className='greyBlock' style={{width: '100%', borderRadius: 0, height: '40vh'}}></div> 
+                                                <div className='greyBlock' style={{width: '100%', borderRadius: 0, height: '100%'}}></div> 
 
                                                 <div className='grid-row'>
-                                                    <div className='greyBlock' style={{width: '60%', borderRadius: 0}}></div> 
-                                                    <div className='greyBlock' style={{width: '60%', borderRadius: 0}}></div> 
+                                                    <div className='greyBlock' style={{width: '60%', borderRadius: 0, height: '100%'}}></div> 
+                                                    <div className='greyBlock' style={{width: '60%', borderRadius: 0, height: '100%'}}></div>
                                                 </div>
 
                                                 <div className='grid-row'>
-                                                    <div className='greyBlock' style={{width: '60%', borderRadius: 0}}></div> 
-                                                    <div className='greyBlock' style={{width: '60%', borderRadius: 0}}></div> 
+                                                    <div className='greyBlock' style={{width: '65%', borderRadius: 0, height: '100%'}}></div> 
+                                                    <div className='greyBlock' style={{width: '65%', borderRadius: 0, height: '100%'}}></div> 
                                                 </div>
                                             </div>
                                             :
@@ -49,10 +50,12 @@ function Inverted(props) {
                                                 <></>
                                             }
 
-                                            <p className='launchT'>Upcoming Launch Schedule</p>
+                                            {/* <p className='launchT'>Upcoming Launch Schedule</p>
                                             <p className='each'>MM/DD/YYYY Time @ LaunchLocation</p>
                                             <p className='each'>MM/DD/YYYY Time @ LaunchLocation</p>
-                                            <p className='each'>MM/DD/YYYY Time @ LaunchLocation</p>
+                                            <p className='each'>MM/DD/YYYY Time @ LaunchLocation</p> */}
+
+                                            <LaunchSched/>
                                         </div>
                                     </div>
                                 </div>

@@ -1,55 +1,171 @@
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/navbar.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/footer.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
-.logo {
-    transform: scale(0.8);
+@media screen and (max-width: 600px) {
+    .logo {
+        transform: scale(0.8);
+    }
+
+    .footlink {
+        all: unset;
+        color: white;
+    }
+
+    .flinks {
+        display: flex;
+        column-gap: 2em;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .flogos {
+    /* margin-left: 1.4rem; */
+        margin-top: 2rem;
+        display: flex;
+        column-gap: 2em;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        margin-top: 3rem;
+        width: 100%;
+        height: 100%;
+        background-color: #1C1C1C;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
-#labs:hover{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
+
+@media screen and (min-width: 601px) {
+    .logo {
+        transform: scale(0.8);
+    }
+
+    .footlink {
+        all: unset;
+        color: white;
+    }
+
+    .flinks {
+        display: flex;
+        column-gap: 2em;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .flogos {
+    /* margin-left: 1.4rem; */
+        margin-top: 2rem;
+        display: flex;
+        column-gap: 2em;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        margin-top: 3rem;
+        width: 100%;
+        height: 100%;
+        background-color: #1C1C1C;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
-#labs:hover #dropdown{
-    display: grid;
-    position:absolute;
-    margin-top: 1rem;
+#red .footer {
+    background-color: #1C1C1C;
+    margin: 0;
 }
 
-#labs:hover li {
-    all:unset;
-    margin-left:-1rem;
-    margin-top: 1rem;
+#white .footer {
+    background-color: #1C1C1C;
+    width: 100%;
 }
 
-#dropdown {
-    display: none;
-}
-
-.navbar {
-    display: flex;
-    margin-top: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 3rem;
-}
-
-.navlink {
-    all: unset;
+#white .flinks {
+    background-color: #1C1C1C;
     color: white;
 }
 
-.links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-count: 3;
-    grid-column-gap: 3em;
-    grid-column-gap: 3em;
-    column-gap: 3em;
-    justify-items: center;
-    align-items: center;
+#red .flinks {
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.flogo {
+    background-color: #1C1C1C;
+}
+
+@media screen and (max-width: 800px) {
+    .flogo {
+        transform: scale(0.8);
+    }
+
+    .flinks {
+        column-gap: 0em;
+    }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/navbar.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+@media screen and (min-width:601px) {
+    .logo {
+        transform: scale(0.8);
+    }
+
+    #labs:hover{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    #labs:hover #dropdown{
+        display: grid;
+        position:absolute;
+        margin-top: 1rem;
+    }
+
+    #labs:hover li {
+        all:unset;
+        margin-left:-1rem;
+        margin-top: 1rem;
+    }
+
+    #dropdown {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 3rem;
+    }
+
+    .navlink {
+        all: unset;
+        color: white;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-count: 3;
+        grid-column-gap: 3em;
+        grid-column-gap: 3em;
+        column-gap: 3em;
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 #red .navlink {
@@ -59,29 +175,83 @@
 #white .navlink{
     color: black;
 }
+
+#white .navbar {
+    margin-left: 2rem;
+}
+
+#red .navbar {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+
+        .links{
+            display: none;
+        }
+    }
+}
 /*!*********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/layout.module.css ***!
   \*********************************************************************************************************************************************************************************************************************************************************************/
-.layout_root___cq4U {
-    margin: -0.5rem; /** figure out how to modify body **/
+@media screen and (min-width:601px) {
+    .layout_root___cq4U {
+        /* margin: -1rem; * figure out how to modify body * */
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .layout_root___cq4U{
+        min-width: 100%;
+        width: 100%;
+    }
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/styles/globals.css ***!
   \************************************************************************************************************************************************************************************************************************************************************************/
 body {
     background-color: black;
+    margin: 0;
 }
 
 #red {
     background-color: #800000;
-    margin-left: 1rem;
     margin-top: -1rem;
 }
 
 #white {
     background-color: white;
-    margin-left: 1rem;
     margin-top: -1rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 1rem;
+}
+
+th {
+    font-weight: 200;
+}
+
+td {
+    font-weight: 100;
+    margin-left: -1vw;
+}
+
+@media screen and (max-width: 600px){
+    body {
+        overflow-x: hidden;
+    }
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.js","import":"Outfit","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!

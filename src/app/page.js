@@ -1,3 +1,4 @@
+'use client'
 import Cards from '@/app/components/cards';
 import Inverted from '@/app/components/invertedTexts';
 import styles from '@/app/page.module.css';
@@ -9,6 +10,7 @@ import highPowerimg from '../../public/highpower.svg';
 import pulseAback from '../../public/pulseAback.svg';
 import spacePortimg from '../../public/spaceport.svg';
 import spacePortback from '../../public/spaceportback.svg';
+
 
 export default function Home() {
 
@@ -76,7 +78,7 @@ export default function Home() {
     <>
         <div className={styles.title}>
             <h1 className={styles.main}>PULSE-A</h1>
-            <h4 className={styles.sub}>UChicago's First Satellite</h4>
+            <h4 className={styles.sub}>UCHICAGO'S FIRST SATELLITE</h4>
             <button className={styles.button}>^</button>
             <div className={styles.imgContainer}>
                 <Image 
@@ -94,11 +96,13 @@ export default function Home() {
                     <h1 className={styles.subTwo}>A SEDS Chapter</h1>
                 </div>
             </div>
+            <div className={styles.line}></div>
             <p className={styles.para}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
             </p>
             <h1 className={styles.cardTitle}>Current Projects</h1>
             <Cards cards={card_data}/>
+            <div className={styles.line}></div>
 
             <h1 className={styles.cardTitle}>Outreach</h1>
             <div className={styles.details}>

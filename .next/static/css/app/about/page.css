@@ -1,6 +1,8 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/about/page.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200i,200,300,400,500i,900,900i');
+
 .page_about__WuQPe {
     color: white;
     margin-left: 4rem;
@@ -24,29 +26,49 @@
     width: 90%;
 }
 
+.page_bigTable__dkAHK {
+    gap: 0rem;
+    width: 100%;
+}
+
 .page_table__vr0lJ {
     display: table;
     width: 100%;
     padding: 5px;
-    margin-bottom: 8rem;
+    font-family: "Poppins";
+    height: 10vh;
+    overflow-y: auto;
 }
+
 .page_tr_header__hrUN1 {
     display: flex;
     padding: 5px;
-    font-size: 1.6rem;
-    font-weight: 100;
-    justify-content: space-between;
-    align-items: center;
-    text-align: right;
-}
-.page_tr__WdJ76 {
-    display: flex;
-    padding: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 100;
     justify-content: space-between;
     align-items: center;
     text-align: left;
+}
+
+.page_tr__WdJ76 {
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    align-items: center;
+    text-align: left;
+}
+
+#page_row__Onug_ {
+    border: white 1px solid;
+    font-size: 1.4em;
+}
+
+#page_headRow__bugSE {
+    border-bottom: white 3px solid;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .page_tr_image__w9Grg {
@@ -74,4 +96,359 @@
     font-weight: 100;
     text-align: right;
     padding-left: 4rem;
+}
+
+.page_grid__GOMR4 {
+    display: grid;
+}
+
+.page_row1__HiJhC {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    font-family: "Poppins";
+    font-weight:lighter;
+}
+
+.page_row2__oYIKx {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+    .page_pImage__H7NMs {
+        width: 11vw;
+        height: auto;
+    }
+
+    .page_separator__zMo4m {
+        flex-wrap: nowrap;
+    }
+}
+
+.page_colrow1__kWe1S {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page_colrow2__MV4Hr {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.page_memCard__3gHDo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-weight: 100;
+}
+
+.page_pImage__H7NMs {
+    width: 12vw;
+}
+
+.page_mName__u09Cr {
+    margin-top: -1vh;
+    font-size: 1.5vw;
+}
+
+.page_mRole__uZggi {
+    margin-top: -2.4vh;
+    font-style: italic;
+    font-weight: 100;
+    font-size:'1vw';
+}
+
+.page_separator__zMo4m {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5vw;
+}
+  
+  .page_separator__zMo4m::before,
+  .page_separator__zMo4m::after {
+    content: '';
+    flex: 1 1;
+    border-bottom: 1px solid white;
+  }
+  
+  .page_separator__zMo4m:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .page_separator__zMo4m:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+
+.page_memLogo__2AR28 {
+    transform: scale(1.2);
+}
+
+#page_memLinks__sNpGa {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1800px) {
+    .page_row1__HiJhC{
+        margin-top: 5vh;
+    }
+
+    .page_mName__u09Cr {
+        margin-top: 1vh;
+    }
+
+    .page_mRole__uZggi {
+        font-size: 1.2vw;
+    }
+
+    .page_colrow1__kWe1S, .page_colrow2__MV4Hr {
+        margin-top: 6vh;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .page_row1__HiJhC{
+        margin-top: 5vh;
+    }
+
+    .page_mName__u09Cr {
+        margin-top: 1vh;
+    }
+
+    .page_mRole__uZggi {
+        font-size: 1.2vw;
+    }
+
+    .page_colrow1__kWe1S, .page_colrow2__MV4Hr {
+        margin-top: 6vh;
+    }
+
+    #page_tdName__X2p95 {
+        padding-right: 8rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .page_mRole__uZggi {
+        font-size: 1.3vw;
+        margin-top: -1vh;
+    }
+
+    .page_colrow1__kWe1S, .page_colrow2__MV4Hr {
+        margin-top: 6vh;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .page_td__atUN7 {
+        transform: scale(0.6);
+    }
+
+    .page_tr_image__w9Grg{
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .page_mName__u09Cr {
+        margin-top: -5vw;
+        font-size: 1.5vw;
+    }
+
+    .page_mRole__uZggi {
+        font-size: 1.4vw;
+        flex-wrap: wrap;
+        width: 90%;
+        text-align: center;
+    }
+
+    .page_row1__HiJhC {
+        margin-top: -4vw;
+    }
+
+    .page_colrow1__kWe1S, .page_colrow2__MV4Hr {
+        margin-top: -6vh;
+    }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/members.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200i,200,300,400,500i,900,900i');
+
+.bigTable {
+    gap: 0rem;
+    width: 100%;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    padding: 5px;
+    font-family: "Poppins";
+    height: 10vh;
+    overflow-y: auto;
+}
+
+.tr_header {
+    display: flex;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 100;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.tr {
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    align-items: center;
+    text-align: left;
+}
+
+#row {
+    border: white 1px solid;
+    font-size: 1.4em;
+}
+
+#headRow {
+    border-bottom: white 3px solid;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tr_image {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 100;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    margin-right: -15rem;
+}
+
+
+@media screen and (min-width: 1500px) {
+    .row1{
+        margin-top: 5vh;
+    }
+
+    .mName {
+        margin-top: 1vh;
+    }
+
+    .mRole {
+        font-size: 1.2vw;
+    }
+
+    .colrow1, .colrow2 {
+        margin-top: 6vh;
+    }
+
+    #tdName {
+        padding-right: 8rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .mRole {
+        font-size: 1.3vw;
+        margin-top: -1vh;
+    }
+
+    .colrow1, .colrow2 {
+        margin-top: 6vh;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .td {
+        transform: scale(0.6);
+    }
+
+    .tr_image{
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mName {
+        margin-top: -5vw;
+        font-size: 1.5vw;
+    }
+
+    .mRole {
+        font-size: 1.4vw;
+        flex-wrap: wrap;
+        width: 90%;
+        text-align: center;
+    }
+
+    .row1 {
+        margin-top: -4vw;
+    }
+
+    .colrow1, .colrow2 {
+        margin-top: -6vh;
+    }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/styles/globals.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+body {
+    background-color: black;
+    margin: 0;
+}
+
+#red {
+    background-color: #800000;
+    margin-top: -1rem;
+}
+
+#white {
+    background-color: white;
+    margin-top: -1rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 1rem;
+}
+
+th {
+    font-weight: 200;
+}
+
+td {
+    font-weight: 100;
+    margin-left: -1vw;
+}
+
+@media screen and (max-width: 600px){
+    body {
+        overflow-x: hidden;
+    }
 }

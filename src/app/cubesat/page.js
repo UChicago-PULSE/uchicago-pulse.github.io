@@ -1,6 +1,38 @@
+'use client'
 import styles from '@/app/cubesat/page.module.css';
+import { useEffect, useState } from 'react';
 import Cards from '../components/cards';
 import Inverted from '../components/invertedTexts';
+
+function useWindowSize() {
+    // Initialize state with undefined width/height so server and client renders match
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+  
+    useEffect(() => {
+      // only execute all the code below in client side
+      // Handler to call on window resize
+      function handleResize() {
+        // Set window width/height to state
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+      
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+       
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+      
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }, []); // Empty array ensures that effect is only run on mount
+    return windowSize;
+  }
 
 function CubeSat() {
 
@@ -25,8 +57,6 @@ function CubeSat() {
             link: false
         },
       ]
-    
-
     let inverted_data = [
         {
             title: "CubeSat Lab",
@@ -47,7 +77,6 @@ function CubeSat() {
             left: false,
         }, 
       ]
-
     let inverted_ad =
     [
         {
@@ -69,6 +98,9 @@ function CubeSat() {
             left: false,
         }, 
     ]
+
+    const size = useWindowSize();
+
     return (
         <>
             <div className={styles.cubesat}>
@@ -96,12 +128,15 @@ function CubeSat() {
                 </div>
 
                 <div className={styles.block} style={{marginTop: '3rem'}}>
-                    <h1 className={styles.subTitle}>Our Team</h1>
-                </div>
-
-                <div className={styles.block} style={{marginTop: '3rem'}}>
                     <h1 className={styles.subTitle}>Advisors</h1>
-                    <Inverted data={inverted_ad} width='100vw' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/>
+                    {size.width <= 1300 ? 
+                        size.width <= 768 ? 
+                        <Inverted data={inverted_ad} width='90vw' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/> 
+                        : 
+                            <Inverted data={inverted_ad} width='95vw' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/>
+                    :
+                        <Inverted data={inverted_ad} width='100vw' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/>
+                    }
                 </div>
             </div>
         </>

@@ -1,51 +1,53 @@
-.logo {
-    transform: scale(0.8);
-}
+@media screen and (min-width:601px) {
+    .logo {
+        transform: scale(0.8);
+    }
 
-#labs:hover{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
+    #labs:hover{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
 
-#labs:hover #dropdown{
-    display: grid;
-    position:absolute;
-    margin-top: 1rem;
-}
+    #labs:hover #dropdown{
+        display: grid;
+        position:absolute;
+        margin-top: 1rem;
+    }
 
-#labs:hover li {
-    all:unset;
-    margin-left:-1rem;
-    margin-top: 1rem;
-}
+    #labs:hover li {
+        all:unset;
+        margin-left:-1rem;
+        margin-top: 1rem;
+    }
 
-#dropdown {
-    display: none;
-}
+    #dropdown {
+        display: none;
+    }
 
-.navbar {
-    display: flex;
-    margin-top: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 3rem;
-}
+    .navbar {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 3rem;
+    }
 
-.navlink {
-    all: unset;
-    color: white;
-}
+    .navlink {
+        all: unset;
+        color: white;
+    }
 
-.links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-count: 3;
-    grid-column-gap: 3em;
-    column-gap: 3em;
-    justify-items: center;
-    align-items: center;
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-count: 3;
+        grid-column-gap: 3em;
+        column-gap: 3em;
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 #red .navlink {
@@ -54,4 +56,26 @@
 
 #white .navlink{
     color: black;
+}
+
+#white .navbar {
+    margin-left: 2rem;
+}
+
+#red .navbar {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+
+        .links{
+            display: none;
+        }
+    }
 }

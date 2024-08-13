@@ -1,4 +1,5 @@
 'use client'
+import Footer from '@/app/components/Footer';
 import Navbar from '@/app/components/Navbar';
 import styles from '@/app/layout.module.css';
 import { Outfit } from "next/font/google";
@@ -16,21 +17,18 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>UCSP</title> 
       </head>
       <body className={inter.className} id={color}>
+        <Navbar/>
         <div className={styles.root} >
-            <Navbar/>
             <div>
             {children}
             </div>
         </div>
+        <Footer/>
       </body>
     </html>) 
 }
 
-        {/* <div className={styles.header}>
-            From layout
-            <Link href='/pulse-a/about'>About</Link>
-            <Link href='/pulse-a/details'>Details</Link>
-        </div> */}

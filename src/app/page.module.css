@@ -1,101 +1,216 @@
-.title {
-    color:white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    margin-top: 7rem;
+@media screen and (max-width: 600px) {
+    .title {
+        color:white;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .backImg {
+        width: 320px;
+        height:auto;
+        margin-top: 2rem;
+    }
+
+    .main {
+        font-style: italic;
+        font-size: 3.5rem;
+    }
+
+    .sub {
+        margin-top: -2.5rem;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+
+    .button {
+        all: unset;
+        transform: rotate(180deg);
+        font-size: 2rem;
+        font-weight: 200;
+        z-index: 2;
+    }
+
+    .imgContainer {
+        width: 100%; 
+        height: 100%;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
+    }
+
+
+    .subTitle {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        font-weight: 600;
+        /* margin-left: 1.5rem; */
+    }
+    
+    .subMain {
+        margin-top: -1rem;
+        font-size: 2.5rem;
+        font-style: italic;
+        font-weight: 700;
+        /* margin-left: 1.5rem; */
+    }
+
+
+    .titleDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 90%;
+        justify-content: flex-end;
+    }
+    
+    .subTwo {
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .titlesRight{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .line {
+        height: 0.01rem;
+        color: white;
+        fill: white;
+        background-color: white;
+        width: 90%;
+    }
+
+    .para {
+        display:none;
+    }
+
+    .cardTitle {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        font-weight: 400;
+    }
+    
+    .details {
+        display: none;
+    }
 }
 
-.main {
-    font-style: italic;
-    font-size: 4rem;
+@media screen and (min-width: 601px) {
+    .title {
+        color:white;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: 7rem;
+    }
+    
+    .main {
+        font-style: italic;
+        font-size: 4rem;
+    }
+    
+    .sub {
+        margin-top: -2.5rem;
+        font-weight: 100;
+        font-size: 1.3rem;
+    }
+    
+    .button {
+        all: unset;
+        transform: rotate(180deg);
+        font-size: 2rem;
+        font-weight: 100;
+        z-index: 2;
+    }
+    
+    .backImg {
+        object-fit: cover;
+        z-index: 1;
+        margin-top: -3rem;
+        width: 100%;
+    }
+    
+    .imgContainer {
+        width: 100%; 
+        height: 100%;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
+    }
+    
+    .subTitle {
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: 500;
+    }
+    
+    .subMain {
+        margin-top: -2rem;
+        font-size: 5rem;
+        font-style: italic;
+        font-weight: 500;
+    }
+    
+    .titleDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 90%;
+        justify-content: flex-end;
+    }
+    
+    .subTwo {
+        font-weight: 400;
+        font-style: italic;
+        margin-top: -2rem;
+    }
+    
+    .titlesRight{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .para {
+        font-weight: 200;
+        font-size: 1.5rem;
+        display: flex;
+        text-align: right;
+        width: 80%;
+        flex-wrap: wrap;
+        margin-right: -10rem;
+        margin-top: 4rem;
+    }
+    
+    .cardTitle {
+        font-weight: 400;
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+    
+    .details {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 200;
+        margin-top: -2rem;
+    }
 }
 
-.sub {
-    margin-top: -2.5rem;
-    font-weight: 100;
-    font-size: 1.5rem;
-}
-
-.button {
-    all: unset;
-    transform: rotate(180deg);
-    font-size: 2rem;
-    font-weight: 100;
-    z-index: 2;
-}
-
-.backImg {
-    object-fit: cover;
-    z-index: 1;
-    margin-top: -3rem;
-    width: 100%;
-}
-
-.imgContainer {
-    width: 100%; 
-    height: 100%;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, transparent 100%);
-}
-
-.subTitle {
-    font-size: 3rem;
-    margin-top: 5rem;
-    font-weight: 500;
-}
-
-.subMain {
-    margin-top: -2rem;
-    font-size: 5rem;
-    font-style: italic;
-    font-weight: 500;
-}
-
-.titleDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    width: 90%;
-    justify-content: flex-end;
-}
-
-.subTwo {
-    font-weight: 400;
-    font-style: italic;
-    margin-top: -2rem;
-}
-
-.titlesRight{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.para {
-    font-weight: 200;
-    font-size: 1.5rem;
-    display: flex;
-    text-align: right;
-    width: 80%;
-    flex-wrap: wrap;
-    margin-right: -10rem;
-    margin-top: 4rem;
-}
-
-.cardTitle {
-    font-weight: 400;
-    font-size: 3rem;
-    margin-top: 5rem;
-}
-
-.details {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 200;
-    margin-top: -2rem;
+@media screen and (max-width: 1000px) {
+    .para {
+        padding-right: 3em;
+    }
 }

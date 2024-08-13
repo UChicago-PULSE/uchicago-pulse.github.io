@@ -1,3 +1,6 @@
 {
+  "/page": "app/page.js",
+  "/rocketry/page": "app/rocketry/page.js",
+  "/cubesat/page": "app/cubesat/page.js",
   "/about/page": "app/about/page.js"
 }
