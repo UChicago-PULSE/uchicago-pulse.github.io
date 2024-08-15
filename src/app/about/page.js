@@ -246,7 +246,7 @@ export default async function About() {
 
                 <Members />
 
-                <div className={styles.outcomes} style={{marginTop:'5em'}}>
+                <div className={styles.outcomes} style={{marginTop:'6em'}}>
                     <h1 className={styles.Mtitle}>Outcomes</h1>
                     <p className={styles.msub}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>
 
@@ -254,7 +254,7 @@ export default async function About() {
                     {/* first row of the body */}
                     <div className={styles.tr_image} style={{marginTop: '2rem'}}>
                         <div className={styles.td}><Image src={jpl}/></div>
-                        <div className={styles.td} style={{marginLeft:'-8.5rem'}}><Image src={nasa}/></div>
+                        <div className={styles.td} style={{}}><Image src={nasa}/></div>
                         <div className={styles.td}><Image src={blueOr}/></div>
                     </div>
                     {/* body of the table */}
@@ -277,10 +277,6 @@ export default async function About() {
                     <div className={styles.tr_image}>
                         <div className={styles.td}><Image src={argonneLab}/></div>
                         <div className={styles.td}><Image src={fermi}/></div>
-                    </div>
-
-                    <div className={styles.tr_image} style={{marginBottom: '5rem'}}>
-                        <div className={styles.td}><Image src={swab}/></div>
                     </div>
                 </div>
                 </div>

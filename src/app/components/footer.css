@@ -98,6 +98,7 @@
 
 .flogo {
     background-color: #1C1C1C;
+    mix-blend-mode: lighten;
 }
 
 @media screen and (max-width: 800px) {
