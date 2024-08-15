@@ -25,11 +25,16 @@
 }
 
 .tr {
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 1.3rem;
     font-weight: 100;
     align-items: center;
     text-align: left;
+}
+
+td {
+    padding: 0.25rem 1rem !important;
+    vertical-align: middle;
 }
 
 #row {
@@ -55,6 +60,26 @@
     margin-right: -15rem;
 }
 
+#memLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.memLogo {
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+.tag {
+    background-color: #ccc;
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+    border-radius: 1rem;
+    padding: 0.15rem 0.75rem;
+    margin-right: 1rem;
+    display: inline-block;
+}
 
 @media screen and (min-width: 1500px) {
     .row1{

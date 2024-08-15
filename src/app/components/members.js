@@ -47,15 +47,17 @@ export default async function Members(props) {
                                         )} 
                                         {each.get('CubeSat Team') ? (
                                             <td className={'td'}>
-                                                PULSE-A: {each.get('CubeSat Team')} {each.get('CubeSat Role')}
+                                                <span className={'tag'} id={'pulse'}>PULSE-A</span>
+                                                {each.get('CubeSat Team')} {each.get('CubeSat Role')}
                                             </td>
                                         ): each.get('CubeSat Role') ? (
                                             <td className={'td'}>
-                                                PUSLE-A: {each.get('CubeSat Role')}
+                                                <span className={'tag'} id={'pulse'}>PULSE-A</span>{each.get('CubeSat Role')}
                                             </td>
                                         ): each.get('Rocketry Project(s)') ? (
                                             <td className={'td'}>
-                                                Rocketry: {each.get('Rocketry Project(s)')} {each.get('Rocketry Role(s)')}
+                                                <span className={'tag'} id={'rocketry'}>Rocketry</span>
+                                                {each.get('Rocketry Project(s)')} {each.get('Rocketry Role(s)')}
                                             </td>
                                         ):(
                                             <td className={'td'}>
