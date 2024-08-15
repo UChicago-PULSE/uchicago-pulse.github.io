@@ -8,6 +8,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
+        cursor: pointer;
     }
 
     #labs:hover #dropdown{
@@ -22,8 +23,22 @@
         margin-top: 1rem;
     }
 
+    #labs li:hover {
+        text-decoration: underline;
+    }
+
+    #dropdown:visited {
+        text-decoration: none;
+    }
+
+    #labs:hover #dropdown li a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     #dropdown {
         display: none;
+        text-decoration: none;
     }
 
     .navbar {
@@ -37,6 +52,13 @@
     .navlink {
         all: unset;
         color: white;
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.5rem;
+    }
+
+    .navlink:hover {
+        text-decoration: underline;
     }
 
     .links {
@@ -47,6 +69,7 @@
         column-gap: 3em;
         justify-items: center;
         align-items: center;
+        cursor: pointer;
     }
 }
 
