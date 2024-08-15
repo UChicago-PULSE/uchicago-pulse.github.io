@@ -17,63 +17,85 @@ import spacex from '../../../public/spaceX.svg';
 import swab from '../../../public/swab.webp';
 import Members from '../components/members';
 
+// This is bad but whatever...
+import lglickman from '../../../public/about/lglickman.jpg'
+import gschulzekalt from '../../../public/about/gschulzekalt.jpg'
+import sludwig from '../../../public/about/sludwig.jpg'
+import vsuri from '../../../public/about/vsuri.jpg'
+import gchong from '../../../public/about/gchong.jpg'
+import zebel from '../../../public/about/zebel.jpg'
+import lhanssler from '../../../public/about/lhanssler.jpg'
+import sknights from '../../../public/about/sknights.jpg'
+import pbhandari from '../../../public/about/pbhandari.jpg'
+
 export default async function About() {
 
     let officers = [
         {
             name: "Lucas Glickman",
             role: "President",
-            sect: "ucsp"
+            sect: "ucsp",
+            img: lglickman
         },
         {
             name: "Graydon Schulze-Kalt",
             role: "Vice President",
-            sect: "ucsp"
+            sect: "ucsp",
+            img: gschulzekalt
         },
         {
             name: "Sebastien Ludwig",
             role: "Comms Head",
-            sect: "ucsp"
+            sect: "ucsp",
+            img: sludwig
         }, 
         {
             name: "Vidya Suri",
             role: "Operations Head",
-            sect: "ucsp"
+            sect: "ucsp",
+            img: vsuri
         }, 
         {
             name: "Geralyn Chong",
             role: "Webmaster",
-            sect: "ucsp"
+            sect: "ucsp",
+            img: gchong
         }, 
         {
             name: "Joseph Ferrari",
             role: "SAC Directior",
-            sect: "rocketry"
+            sect: "rocketry",
+            img: profile
         },
         {
             name: "Zane Ebel",
             role: "HPR Director",
-            sect: "rocketry"
+            sect: "rocketry",
+            img: zebel
         },
         {
             name: "Unknown",
-            role: "Fudning Head",
-            sect: "rocketry"
+            role: "Funding Head",
+            sect: "rocketry",
+            img: profile
         }, 
         {
             name: "Logan Hanssler",
             role: "PULSE-A Director",
-            sect: "cubesat"
+            sect: "cubesat",
+            img: lhanssler
         },
         {
             name: "Seth Knights",
             role: "PULSE-A Chief Eng.",
-            sect: "cubesat"
+            sect: "cubesat",
+            img: sknights
         },
         {
             name: "Parth Bhandari",
             role: "PULSE-A Funding Head",
-            sect: "cubesat"
+            sect: "cubesat",
+            img: pbhandari
         }
     ]
 
@@ -91,68 +113,65 @@ export default async function About() {
 
                 <h1 className={styles.title} style={{marginTop: '10rem'}}>Officers</h1>
                 <div style={{marginBottom: '10rem'}} className={styles.grid}>
-                    <div className={styles.separator} style={{marginBottom:'-2vh',fontWeight:'100'}}>UCSP</div>
+                    <div className={styles.separator} style={{fontWeight:'100'}}>UCSP</div>
                     <div className={styles.row1}>
                         {officers.map((memDict, i) => {
                             return(
                                 memDict.sect == "ucsp" ? 
                                     (<div key={i} className={styles.memCard}>
                                         <Image 
-                                            src={profile}
+                                            src={memDict.img}
                                             alt="profile"
                                             className={styles.pImage}
+                                            width={220}
+                                            height={220}
                                         />
                                         <p className={styles.mName}>{memDict.name}</p>
                                         <p className={styles.mRole}>{memDict.role}</p>
-                                    </div>) : 
-                                    (
-                                        <div key={i}></div>
-                                    )
+                                    </div>) : ""
                             )}
                         )}
                     </div>
                     <div className={styles.row2}>
                         <div style={{width: '48%', alignItems:'center', marginTop:'2rem'}}>
-                            <div className={styles.separator} style={{marginBottom:'-3vh', fontWeight:'100'}}>Rocketry Lab</div>
+                            <div className={styles.separator} style={{fontWeight:'100'}}>Rocketry Lab</div>
                             <div className={styles.colrow1}>
                                 {officers.map((memDict, i) => {
                                         return(
                                             memDict.sect == "rocketry" ? 
                                                 (<div key={i} className={styles.memCard}>
                                                     <Image 
-                                                        src={profile}
+                                                        src={memDict.img}
                                                         alt="profile"
                                                         className={styles.pImage}
+                                                        width={220}
+                                                        height={220}
                                                     />
                                                     <p className={styles.mName}>{memDict.name}</p>
                                                     <p className={styles.mRole}>{memDict.role}</p>
-                                                </div>) : 
-                                                (
-                                                    <div key={i}></div>
-                                                )
+                                                </div>) : ""
                                         )
                                     }
                                 )}
                             </div>
                         </div>
                         <div style={{width: '48%', alignItems:'center', marginTop:'2rem'}}>
-                            <div className={styles.separator} style={{marginBottom:'-3vh', fontWeight:'100'}}>CubeSat Lab</div>
+                            <div className={styles.separator} style={{fontWeight:'100'}}>CubeSat Lab</div>
                             <div className={styles.colrow2}>
                                 {officers.map((memDict, i) => {
                                     return(
                                         memDict.sect == "cubesat" ? 
                                             (<div key={i} className={styles.memCard}>
                                                 <Image 
-                                                    src={profile}
+                                                    src={memDict.img}
                                                     alt="profile"
                                                     className={styles.pImage}
+                                                    width={220}
+                                                    height={220}
                                                 />
                                                 <p className={styles.mName}>{memDict.name}</p>
                                                 <p className={styles.mRole}>{memDict.role}</p>
-                                            </div>) : 
-                                            (
-                                                <div key={i}></div>
-                                            )
+                                            </div>) : ""
                                     )}
                                 )}
                             </div>
