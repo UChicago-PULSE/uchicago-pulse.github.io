@@ -9,16 +9,11 @@ function Cards (props){
                     props.cards.map((dict, i) => {
                         return (
                             dict.page == 'home' ? (
-                                <div key={i} className="card" >
-                                    <Image
-                                        src= {dict.backImg}
-                                        alt= "background"
-                                        style = {{
-                                            filter: 'blur(54px)',
-                                            objectFit: 'cover',
-                                        }}
-                                        className='backImg'
-                                    />
+                                <div key={i} className="card" style = {{
+                                    // filter: 'blur(54px)',
+                                    objectFit: 'cover',
+                                    backgroundImage: `url(${dict.img.src})`,
+                                }}>
                                     <div className='upper'>
                                         <Image
                                             src={dict.img}
