@@ -42,7 +42,7 @@ const Footer = () => {
                     <Link href="/">
                         <Image 
                             className='flogo'
-                            src={src_uc}
+                            src={b_uclogo}
                             alt="UCSP Logo"
                         />
                     </Link>
@@ -62,6 +62,7 @@ const Footer = () => {
                             src={github}
                             className='logo'
                             alt='github'
+                            width={30}
                         />
                     </Link>
                     <Link href="/pulse-a" className='footlink'>
@@ -69,6 +70,7 @@ const Footer = () => {
                             src={insta}
                             className='logo'
                             alt='insta'
+                            width={30}
                         />
                     </Link>
                     <Link href="/pulse-a" className='footlink'>
@@ -76,6 +78,7 @@ const Footer = () => {
                             src={x}
                             className='logo'
                             alt='X'
+                            width={30}
                         />
                     </Link>
                     <Link href="/pulse-a" className='footlink'>
@@ -83,6 +86,7 @@ const Footer = () => {
                             src={linkedin}
                             className='logo'
                             alt='linkedin'
+                            width={30}
                         />
                     </Link>
                 </div>

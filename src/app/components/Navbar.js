@@ -45,11 +45,14 @@ const Navbar = () => {
                         JOIN
                     </Link>
                 </div>
-                <Image 
-                    className='logo'
-                    src={src_ucphoenix}
-                    alt="UCPhoenix Logo"
-                />
+                <a href="https://www.uchicago.edu" style={{cursor: 'pointer'}}>
+                    <Image 
+                        style={{float: 'right', paddingRight: '2rem'}}
+                        className='logo'
+                        src={src_ucphoenix}
+                        alt="UCPhoenix Logo"
+                    />
+                </a>
             </nav>
         </div>
     );
