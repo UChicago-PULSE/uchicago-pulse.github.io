@@ -4,6 +4,7 @@
     color: white;
     margin: 0 auto;
     max-width: 1300px;
+    margin: 0 4rem;
 }
 
 .title{
@@ -182,20 +183,20 @@
     margin-bottom: 2rem;
 }
   
-  .separator::before,
-  .separator::after {
+.separator::before,
+.separator::after {
     content: '';
     flex: 1;
     border-bottom: 1px solid white;
-  }
-  
-  .separator:not(:empty)::before {
+}
+
+.separator:not(:empty)::before {
     margin-right: 1.5vw;
-  }
-  
-  .separator:not(:empty)::after {
+}
+
+.separator:not(:empty)::after {
     margin-left: 1.5vw;
-  }
+}
 
 
 .memLogo {
@@ -214,5 +215,9 @@
 
     .separator {
         font-size: 1.5rem;
+    }
+
+    .about {
+        margin: 0 auto;
     }
 }

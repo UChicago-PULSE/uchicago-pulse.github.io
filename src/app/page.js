@@ -4,12 +4,15 @@ import Inverted from '@/app/components/invertedTexts';
 import styles from '@/app/page.module.css';
 import Image from 'next/image';
 import pulseAimg from '../../public/PULSE-A_PATCH.svg';
-import home_background from '../../public/back_home.svg';
+import home_background from '../../public/PULSE_Render_enlarged2.png';
 import highPowerback from '../../public/highPowerback.svg';
 import highPowerimg from '../../public/highpower.svg';
 import pulseAback from '../../public/pulseAback.svg';
 import spacePortimg from '../../public/spaceport.svg';
 import spacePortback from '../../public/spaceportback.svg';
+import { Poppins } from 'next/font/google';
+
+const pop = Poppins({ subsets: ['latin'], weight: ['600', '700'], style: ['italic', 'normal']});
 
 
 export default function Home() {
@@ -77,7 +80,7 @@ export default function Home() {
   return (
     <>
         <div className={styles.title}>
-            <h1 className={styles.main}>PULSE-A</h1>
+            <h1 className={`${styles.main} ${pop.className}`}>PULSE-A</h1>
             <h4 className={styles.sub}>UCHICAGO'S FIRST SATELLITE</h4>
             <button className={styles.button}>^</button>
             <div className={styles.imgContainer}>
@@ -90,10 +93,10 @@ export default function Home() {
             <div className={styles.titleDiv}>
                 <div className={styles.titlesRight}>
                     <div>
-                        <h1 className={styles.subTitle}>We are the</h1>
-                        <h1 className={styles.subMain}>UChicago Space Program</h1>
+                        <h1 className={`${styles.subTitle} ${pop.className}`}>We are the</h1>
+                        <h1 className={`${styles.subMain} ${pop.className}`}>UChicago Space Program</h1>
                     </div>
-                    <h1 className={styles.subTwo}>A SEDS Chapter</h1>
+                    <h1 className={`${styles.subTwo} ${pop.className}`}>A SEDS Chapter</h1>
                 </div>
             </div>
             <div className={styles.line}></div>
