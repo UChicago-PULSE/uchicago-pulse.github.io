@@ -5,6 +5,12 @@
 
 .card {
     cursor: pointer;
+    border: 2px solid black;
+    transition: ease border 0.1s;
+}
+
+.card:hover {
+    border: 2px solid white;
 }
 
 @media screen and (max-width: 600px) {

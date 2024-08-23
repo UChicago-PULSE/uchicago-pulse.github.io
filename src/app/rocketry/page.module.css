@@ -1,7 +1,9 @@
 .rocketry {
     color: white;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .title{

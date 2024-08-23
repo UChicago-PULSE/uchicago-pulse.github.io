@@ -9,7 +9,7 @@ function Cards (props){
                     props.cards.map((dict, i) => {
                         return (
                             dict.page == 'home' ? (
-                                <div key={i} className="card" style = {{
+                                <a key={i} className="card" href={dict.link} style = {{
                                     // filter: 'blur(54px)',
                                     objectFit: 'cover',
                                     backgroundImage: `url(${dict.img.src})`,
@@ -22,7 +22,7 @@ function Cards (props){
                                         />
                                         <h2 className='title'>{dict.title}</h2>
                                     </div>
-                                </div>  
+                                </a>  
                             ) : (
                                 <div key={i} className="border_card">
                                     <h1 className='ctitle'>{dict.title}</h1>

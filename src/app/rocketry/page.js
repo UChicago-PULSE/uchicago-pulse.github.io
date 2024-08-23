@@ -39,7 +39,7 @@ function Rocketry() {
                 <div className={styles.block} id={styles.spaces} style={{marginTop: '-3rem'}}>
                     <h1 className={styles.subTitle}>Projects</h1>
                     <div className={styles.inverted}>
-                        <Inverted data={inverted_data} border={false} width='100vw' imgChange={{width: '200vw', round: '0rem', bold: '800', mbottom: '4rem'}}/>
+                        <Inverted data={inverted_data} border={false} imgChange={{width: '200vw', round: '0rem', bold: '800', mbottom: '4rem'}}/>
                     </div>
                 </div>
             </div>

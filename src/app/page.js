@@ -25,7 +25,7 @@ export default function Home() {
         backImg: pulseAback,
         subtitle: "",
         details: "",
-        link: false
+        link: "/pulse-a"
     }, 
     {
         page: "home",
@@ -34,7 +34,7 @@ export default function Home() {
         backImg: highPowerback,
         subtitle: "",
         details: "",
-        link: false
+        link: "/rocketry"
     }, 
     {
         page: "home",
@@ -43,7 +43,7 @@ export default function Home() {
         backImg: spacePortback,
         subtitle: "",
         details: "",
-        link: false
+        link: "/rocketry"
     }, 
   ]
 

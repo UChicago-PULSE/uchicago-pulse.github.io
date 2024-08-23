@@ -1,7 +1,9 @@
 .cubesat {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    overflow: hidden;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    /* overflow: hidden; */
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .title{

@@ -4,6 +4,9 @@ import { useEffect, useState } from 'react';
 import Cards from '../components/cards';
 import Inverted from '../components/invertedTexts';
 
+import lembeck from '../../../public/cubesat/lembeck.png';
+import zhong from '../../../public/cubesat/zhong.png';
+
 function useWindowSize() {
     // Initialize state with undefined width/height so server and client renders match
     const [windowSize, setWindowSize] = useState({
@@ -81,7 +84,7 @@ function CubeSat() {
     [
         {
             title: "Tian Zhong",
-            image: "block",
+            image: zhong,
             subTitle: 'Assistant Professor of Molecular Engineering\r\nUniversity of Chicago, Pritzker School of Molecular Engineering',
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
             imageWidth: "",
@@ -90,8 +93,8 @@ function CubeSat() {
         }, 
         {
             title: "Michael Lembeck",
-            image: "block",
-            subTitle: "Clinical Associate Professor in Aerospace Engineering\r\n University of Illinois at Urbana Champaign",
+            image: lembeck,
+            subTitle: "Fmr. Clinical Associate Professor in Aerospace Engineering\r\n University of Illinois at Urbana Champaign",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
             imageWidth: "",
             special: false,
@@ -118,7 +121,7 @@ function CubeSat() {
                 <div className={styles.block} id={styles.spaces}>
                     <h1 className={styles.subTitle}>Our Spaces</h1>
                     <div className={styles.inverted}>
-                        <Inverted data={inverted_data} border={false} width='100vw' imgChange={{width: '180vw', round: '0rem', bold: '700', mbottom: '4rem'}}/>
+                        <Inverted data={inverted_data} border={false} width='' imgChange={{width: '180vw', round: '0rem', bold: '700', mbottom: '4rem'}}/>
                     </div>
                 </div>
 
@@ -131,11 +134,11 @@ function CubeSat() {
                     <h1 className={styles.subTitle}>Advisors</h1>
                     {size.width <= 1300 ? 
                         size.width <= 768 ? 
-                        <Inverted data={inverted_ad} width='90vw' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/> 
+                        <Inverted data={inverted_ad} width='100%' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/> 
                         : 
                             <Inverted data={inverted_ad} width='95vw' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/>
                     :
-                        <Inverted data={inverted_ad} width='100vw' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/>
+                        <Inverted data={inverted_ad} width='' imgChange={{width: '40vw', round: '1rem', bold: '500', mbottom: '-0.3rem', detailTop: '1rem', subtitleSize: '1.3rem', subtitleIt: 'italic', subWeight: '300'}}/>
                     }
                 </div>
             </div>

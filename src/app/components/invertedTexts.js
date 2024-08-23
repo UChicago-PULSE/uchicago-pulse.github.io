@@ -32,8 +32,9 @@ function Inverted(props) {
                                                 </div>
                                             </div>
                                             :
-                                            <Image 
-                                        
+                                            <Image src={each.image}
+                                                // alt='Headshot'
+                                                width={220}
                                             />
                                         }
 
@@ -68,8 +69,11 @@ function Inverted(props) {
                                         {each.image == "block" ? 
                                             <div className='greyBlock' style={{width: imgGreywidth, borderRadius: imgGreyRound}}></div> 
                                             :
-                                            <Image 
-                                        
+                                            <Image src={each.image}
+                                                className="image"
+                                                width={220}
+                                                height={300}
+                                                style={{objectFit: 'cover'}}
                                             />
                                         }
 

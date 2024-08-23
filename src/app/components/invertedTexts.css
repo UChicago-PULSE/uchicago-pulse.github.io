@@ -11,6 +11,10 @@
         display: flex;
         width: 90%;
         align-items: center;
+
+        .text {
+            margin-left: 1rem;
+        }
     }
 
     .seg {
@@ -44,6 +48,7 @@
 
         .text {
             text-align: right;
+            margin-right: 1rem;
         }
 
         .greyBlock {
@@ -220,4 +225,8 @@
         margin-bottom: 3rem;
         margin-left: 2rem;
     }
+}
+
+.image {
+    margin: 1rem;
 }
