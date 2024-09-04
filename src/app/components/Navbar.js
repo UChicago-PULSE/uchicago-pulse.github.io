@@ -8,6 +8,7 @@ import b_ucphoenix from '../../../public/UChicago_Phoenix_Solid_1Color_White_RGB
 import r_uclogo from '../../../public/redUC.svg';
 import uclogo from '../../../public/ucsp_whiteonblack.svg';
 import b_uclogo from '../../../public/uscp_blackonwhite.svg';
+import { useState } from 'react';
 
 const Navbar = () => {
 
@@ -20,12 +21,18 @@ const Navbar = () => {
     let color = pathname == "/cubesat" ? 'white' : 'black';
     color = pathname == "/rocketry" ? 'red' : color; 
 
+    let [openMenu, setOpenMenu] = useState(false);
+
+    const handleMenu = () => {
+        setOpenMenu(!openMenu);
+    }
+
     return (
         <div>
             <nav className='navbar'>
                 <Link href="/">
                     <Image 
-                        className='logo'
+                        className='logo ucsp'
                         src={src_uc}
                         alt="UCSP Logo"
                     />
@@ -48,11 +55,46 @@ const Navbar = () => {
                 <a href="https://www.uchicago.edu" style={{cursor: 'pointer'}}>
                     <Image 
                         style={{float: 'right', paddingRight: '2rem'}}
-                        className='logo'
+                        className='logo ucphoenix'
                         src={src_ucphoenix}
                         alt="UCPhoenix Logo"
                     />
                 </a>
+                <div className='hamburger' onClick={handleMenu}>
+                    <div class="a"></div>
+                    <div class="a b"></div>
+                    <div class="a"></div>
+                    <div class="a b"></div>
+                    <div class="a"></div>
+                </div>
+                {openMenu ? 
+                <div class="menu">
+                    <Link href="/about" className='footlink'>
+                        ABOUT
+                    </Link>
+                    <Link href='/cubesat' className='footlink' onClick={handleMenu}>
+                        CUBESAT
+                    </Link>
+                    <Link href='/rocketry' className='footlink'>
+                        ROCKETRY
+                    </Link>
+                    <Link href="/">
+                        <Image 
+                            className='flogo'
+                            src={b_uclogo}
+                            alt="UCSP Logo"
+                        />
+                    </Link>
+                    <Link href="/join" className='footlink'>
+                        JOIN
+                    </Link>
+                    <Link href="/pulse-a" className='footlink'>
+                        PULSE-A
+                    </Link>
+                    <Link href="/pulse-a" className='footlink'>
+                        CONTACT
+                    </Link>
+                </div> : ""}
             </nav>
         </div>
     );

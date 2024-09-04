@@ -148,15 +148,16 @@
     .seg {
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
+        /* margin-top: 3rem; */
         width: 100%;
     }
 
     .greyBlock {
         background-color: lightgray;
-        height: 100%;
+        /* height: 200%; */
+        aspect-ratio: 2/1;
         width: 80vw;
-        margin-right: 2rem;
+        /* margin-right: 2rem; */
         border-radius: 2rem;
     }
 
@@ -171,13 +172,16 @@
     }
 
     .text {
-        display:grid;
-        margin-top: -1.3rem;
-        width: 200%;
+        /* display:grid;
+        margin-top: -1.3rem; */
+        /* width: 200%; */
     }
 
     .segtitle {
         font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        padding-top: 0.5rem;
     }
 
     .segdescrip {
@@ -194,8 +198,8 @@
         margin-bottom: 2rem;
 
         .text {
-            text-align: right;
-            margin-right: 2.5rem;
+            /* text-align: right; */
+            /* margin-right: 2.5rem; */
         }
     }
 

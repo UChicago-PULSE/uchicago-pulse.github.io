@@ -86,7 +86,7 @@
 }
 
 #white .navbar {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 
 #red .navbar {
@@ -103,10 +103,66 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-top: 2rem;
+        height: 50px;
+        background-color: #1e1e1e;
+        /* margin-top: 1rem; */
 
         .links{
             display: none;
+        }
+    }
+
+    .logo {
+        transform: none;
+        height: 2rem;
+        mix-blend-mode: lighten;
+        aspect-ratio: 1/1;
+        width: 3rem;
+    
+        &.ucsp {
+            padding-left: 1rem;
+        }
+
+        &.ucphoenix {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        width: 1.5rem;
+        height: 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    
+        .a {
+            height: 15%;
+            background-color: white;
+        }
+
+        .b {
+            height: 27.5%;
+            background-color: #1e1e1e !important;
+        }
+    }
+
+    .menu {
+        width: 100%;
+        height: calc(100vh - 50px);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #1e1e1e;
+        z-index: 10;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        .footlink {
+            cursor: pointer;
         }
     }
 }
