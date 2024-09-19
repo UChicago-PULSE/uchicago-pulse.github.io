@@ -14,6 +14,8 @@ export default function Layout({ children }) {
     let color = pathname == "/cubesat" ? 'white' : 'black';
     color = pathname == "/rocketry" ? 'red' : color; 
 
+    const showAlert = true;
+
   return (
     <html lang="en">
       <head>
@@ -21,6 +23,9 @@ export default function Layout({ children }) {
         <title>UCSP</title> 
       </head>
       <body className={inter.className} id={color}>
+        {showAlert ? 
+                <div className={styles.alert}>Site still under construction... 🚀</div> 
+            : ''}
         <Navbar/>
         <div className={styles.root} >
             <div>

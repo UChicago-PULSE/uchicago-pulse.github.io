@@ -5,6 +5,8 @@ import Image from 'next/image';
 function Inverted(props) {
     const imgGreywidth = props.imgChange.width;
     const imgGreyRound = props.imgChange.round;
+    const imgWidth = props.imgWidth;
+    const imgHeight = props.imgHeight;
     console.log(imgGreyRound);
     console.log(imgGreywidth);
 
@@ -71,8 +73,8 @@ function Inverted(props) {
                                             :
                                             <Image src={each.image}
                                                 className="image"
-                                                width={220}
-                                                height={300}
+                                                width={imgWidth}
+                                                height={imgHeight}
                                                 style={{objectFit: 'cover'}}
                                             />
                                         }

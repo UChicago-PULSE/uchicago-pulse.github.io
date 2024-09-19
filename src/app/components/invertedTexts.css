@@ -35,7 +35,7 @@
     }
 
     .segdescrip {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 200;
         margin-top: -1.4rem;
     }
@@ -233,4 +233,5 @@
 
 .image {
     margin: 1rem;
+    max-width: 50%;
 }

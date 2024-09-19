@@ -28,75 +28,78 @@ const Navbar = () => {
     }
 
     return (
-        <div>
-            <nav className='navbar'>
-                <Link href="/">
+        <nav className='navbar'>
+            <Link href="/">
+                <Image 
+                    className='logo ucsp'
+                    src={src_uc}
+                    alt="UCSP Logo"
+                />
+                <Image 
+                    className='logo ucsp mobile'
+                    src={uclogo}
+                    alt="UCSP Logo"
+                />
+            </Link>
+            <div className='links' id={color}>
+                <Link href="/about" className='navlink'>
+                    ABOUT
+                </Link>
+                <Link href=""className='navlink' id='labs'>
+                    LABORATORIES
+                    <ul id='dropdown'>
+                        <li><Link href='/cubesat'>CUBESAT</Link></li>
+                        <li><Link href='/rocketry'>ROCKETRY</Link></li>
+                    </ul>
+                </Link>
+                <Link href="/join" className='navlink'>
+                    JOIN
+                </Link>
+            </div>
+            <a href="https://www.uchicago.edu" style={{cursor: 'pointer'}}>
+                <Image 
+                    style={{float: 'right', paddingRight: '2rem'}}
+                    className='logo ucphoenix'
+                    src={src_ucphoenix}
+                    alt="UCPhoenix Logo"
+                />
+            </a>
+            <div className='hamburger' onClick={handleMenu}>
+                <div class="a"></div>
+                <div class="a b"></div>
+                <div class="a"></div>
+                <div class="a b"></div>
+                <div class="a"></div>
+            </div>
+            {openMenu ? 
+            <div class="menu">
+                <Link href="/about" className='footlink' onClick={handleMenu}>
+                    ABOUT
+                </Link>
+                <Link href='/cubesat' className='footlink' onClick={handleMenu}>
+                    CUBESAT
+                </Link>
+                <Link href='/rocketry' className='footlink' onClick={handleMenu}>
+                    ROCKETRY
+                </Link>
+                <Link href="/" onClick={handleMenu}>
                     <Image 
-                        className='logo ucsp'
-                        src={src_uc}
+                        className='flogo'
+                        src={b_uclogo}
                         alt="UCSP Logo"
                     />
                 </Link>
-                <div className='links' id={color}>
-                    <Link href="/about" className='navlink'>
-                        ABOUT
-                    </Link>
-                    <Link href=""className='navlink' id='labs'>
-                        LABORATORIES
-                        <ul id='dropdown'>
-                            <li><Link href='/cubesat'>CUBESAT</Link></li>
-                            <li><Link href='/rocketry'>ROCKETRY</Link></li>
-                        </ul>
-                    </Link>
-                    <Link href="/join" className='navlink'>
-                        JOIN
-                    </Link>
-                </div>
-                <a href="https://www.uchicago.edu" style={{cursor: 'pointer'}}>
-                    <Image 
-                        style={{float: 'right', paddingRight: '2rem'}}
-                        className='logo ucphoenix'
-                        src={src_ucphoenix}
-                        alt="UCPhoenix Logo"
-                    />
-                </a>
-                <div className='hamburger' onClick={handleMenu}>
-                    <div class="a"></div>
-                    <div class="a b"></div>
-                    <div class="a"></div>
-                    <div class="a b"></div>
-                    <div class="a"></div>
-                </div>
-                {openMenu ? 
-                <div class="menu">
-                    <Link href="/about" className='footlink'>
-                        ABOUT
-                    </Link>
-                    <Link href='/cubesat' className='footlink' onClick={handleMenu}>
-                        CUBESAT
-                    </Link>
-                    <Link href='/rocketry' className='footlink'>
-                        ROCKETRY
-                    </Link>
-                    <Link href="/">
-                        <Image 
-                            className='flogo'
-                            src={b_uclogo}
-                            alt="UCSP Logo"
-                        />
-                    </Link>
-                    <Link href="/join" className='footlink'>
-                        JOIN
-                    </Link>
-                    <Link href="/pulse-a" className='footlink'>
-                        PULSE-A
-                    </Link>
-                    <Link href="/pulse-a" className='footlink'>
-                        CONTACT
-                    </Link>
-                </div> : ""}
-            </nav>
-        </div>
+                <Link href="/join" className='footlink' onClick={handleMenu}>
+                    JOIN
+                </Link>
+                <Link href="/pulse-a" className='footlink' onClick={handleMenu}>
+                    PULSE-A
+                </Link>
+                <Link href="/pulse-a" className='footlink' onClick={handleMenu}>
+                    CONTACT
+                </Link>
+            </div> : ""}
+        </nav>
     );
 };
 

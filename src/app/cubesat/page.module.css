@@ -4,6 +4,8 @@
     /* overflow: hidden; */
     max-width: 1300px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .title{
@@ -21,13 +23,15 @@
     text-align: right;
     font-size: 1.3rem;
     font-weight: 300;
-    width: 90%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10rem;
     float: right;
 }
 
 .block {
     display: flex;
-    margin-top:10em;
+    margin-top: 2rem;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -43,4 +47,15 @@
     #spaces {
         margin-left: 3rem;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .subDescription {
+        padding: 0;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    
 }
