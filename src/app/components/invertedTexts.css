@@ -227,7 +227,7 @@
     .block {
         width: 90vw;
         margin-bottom: 3rem;
-        margin-left: 2rem;
+        /* margin-left: 2rem; */
     }
 }
 

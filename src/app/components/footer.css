@@ -118,6 +118,11 @@
     cursor: pointer;
 }
 
+.footlink {
+    width: 85px;
+    text-align: center;
+}
+
 @media screen and (max-width: 800px) {
     .flogo {
         transform: scale(0.8);
