@@ -1,0 +1,23 @@
+@media screen and (min-width:601px) {
+    .root {
+        /* margin: -1rem; * figure out how to modify body * */
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .root{
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+.alert {
+    width: 100%;
+    font-size: 0.9rem;
+    background-color: gold;
+    display: flex;
+    padding: 0.25rem 0rem;
+    align-items: center;
+    justify-content: center;
+}

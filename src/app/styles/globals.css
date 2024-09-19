@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+#red {
+    background-color: #800000;
+    /* margin-top: -1rem; */
+}
+
+#white {
+    background-color: white;
+    /* margin-top: -1rem; */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 1rem;
+}
+
+th {
+    font-weight: 200;
+}
+
+td {
+    font-weight: 100;
+    margin-left: -1vw;
+}
+
+@media screen and (max-width: 600px){
+    body {
+        overflow-x: hidden;
+    }
+}

@@ -1,0 +1,21 @@
+.launchT {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.each {
+    font-weight: 200;
+    width: 90%;
+    font-size: 1.3rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    border: 1px white solid;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.scrollBlock {
+    height: 10vh; 
+    overflow-y: auto; 
+    padding-bottom: 1.8em;
+}
