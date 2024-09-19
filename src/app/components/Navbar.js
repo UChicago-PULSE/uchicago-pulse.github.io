@@ -52,7 +52,7 @@ const Navbar = () => {
                         <li><Link href='/rocketry'>ROCKETRY</Link></li>
                     </ul>
                 </Link>
-                <Link href="/join" className='navlink'>
+                <Link href="https://docs.google.com/forms/d/1jiXOX33-p-h8lLMY3VJhZ5mswJuqcpZ9GpILEmz8uT0/viewform" target='_blank' className='navlink'>
                     JOIN
                 </Link>
             </div>
@@ -89,7 +89,7 @@ const Navbar = () => {
                         alt="UCSP Logo"
                     />
                 </Link>
-                <Link href="/join" className='footlink' onClick={handleMenu}>
+                <Link href="https://docs.google.com/forms/d/1jiXOX33-p-h8lLMY3VJhZ5mswJuqcpZ9GpILEmz8uT0/viewform" target='_blank' className='footlink' onClick={handleMenu}>
                     JOIN
                 </Link>
                 <Link href="/pulse-a" className='footlink' onClick={handleMenu}>
