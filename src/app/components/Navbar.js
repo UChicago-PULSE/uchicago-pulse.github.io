@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import ucphoenix from '../../../public/UChicago_PhoenixWhite.svg';
 import b_ucphoenix from '../../../public/UChicago_Phoenix_Solid_1Color_White_RGB.svg';
-import r_uclogo from '../../../public/redUC.svg';
-import uclogo from '../../../public/ucsp_whiteonblack.svg';
-import b_uclogo from '../../../public/uscp_blackonwhite.svg';
+import r_uclogo from '../../../public/ucsp_whiteonmaroon.png';
+import uclogo from '../../../public/ucsp_whiteonblack.png';
+import b_uclogo from '../../../public/uscp_blackonwhite.png';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -34,6 +34,7 @@ const Navbar = () => {
                     className='logo ucsp'
                     src={src_uc}
                     alt="UCSP Logo"
+                    width={225}
                 />
                 <Image 
                     className='logo ucsp mobile'

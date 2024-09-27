@@ -5,6 +5,8 @@
         &.mobile {
             display: none;
         }
+
+        
     }
 
     #labs:hover{
@@ -87,10 +89,6 @@
 
 #white .navlink{
     color: black;
-}
-
-#white .navbar {
-    margin-left: 2rem;
 }
 
 #red .navbar {

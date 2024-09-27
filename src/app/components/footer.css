@@ -96,7 +96,7 @@
     color: white;
 }
 
-#white .flogo {
+/* #white .flogo {
     filter: invert();
 }
 
@@ -106,12 +106,13 @@
 
 #black .flogo {
     filter: invert();
-}
+} */
 
 .flogo {
     background-color: #1C1C1C;
     mix-blend-mode: lighten;
     cursor: pointer;
+    filter: invert();
 }
 
 .flinks {

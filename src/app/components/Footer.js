@@ -3,12 +3,7 @@ import '@/app/components/footer.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import ucphoenix from '../../../public/UChicago_PhoenixWhite.svg';
-import b_ucphoenix from '../../../public/UChicago_Phoenix_Solid_1Color_White_RGB.svg';
-import r_uclogo from '../../../public/redUC.svg';
-// import uclogo1 from '../../../public/ucsp_whiteonblack-1.svg';
-import uclogo from '../../../public/ucsp_whiteonblack.svg';
-import b_uclogo from '../../../public/uscp_blackonwhite.svg';
+import b_uclogo from '../../../public/uscp_blackonwhite.png';
 
 import x from '../../../public/footer/Xlogo.svg';
 import github from '../../../public/footer/githublogo.svg';
@@ -18,10 +13,6 @@ import linkedin from '../../../public/footer/linkedinlogo.svg';
 const Footer = () => {
 
     const pathname = usePathname();
-    let src_uc = pathname == "/cubesat" ? b_uclogo : uclogo;
-    src_uc = pathname == "/rocketry" ? r_uclogo : src_uc; 
-
-    let src_ucphoenix = pathname == "/cubesat" ? b_ucphoenix : ucphoenix;
 
     let color = pathname == "/cubesat" ? 'white' : 'black';
     color = pathname == "/rocketry" ? 'red' : color; 
@@ -44,6 +35,7 @@ const Footer = () => {
                             className='flogo'
                             src={b_uclogo}
                             alt="UCSP Logo"
+                            width={225}
                         />
                     </Link>
                     <Link href="/join" className='footlink'>
