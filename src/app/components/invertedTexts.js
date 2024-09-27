@@ -7,8 +7,8 @@ function Inverted(props) {
     const imgGreyRound = props.imgChange.round;
     const imgWidth = props.imgWidth;
     const imgHeight = props.imgHeight;
-    console.log(imgGreyRound);
-    console.log(imgGreywidth);
+    
+
 
     return (
         <>
@@ -19,18 +19,18 @@ function Inverted(props) {
                             each.special ? (
                                 <div className='seg' key={i}>
                                     <div className={each.left ? "left" : "right"}>
-                                        {each.image == "block" ? 
+                                        {Array.isArray(each.image) ? 
                                             <div className='grid-display'>
-                                                <div className='greyBlock' style={{width: '100%', borderRadius: 0, height: '100%'}}></div> 
+                                                <div className='greyBlock' style={{ backgroundImage: `url("${each.image[0].src}")`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', borderRadius: 0, height: '100%',}}></div> 
 
                                                 <div className='grid-row'>
-                                                    <div className='greyBlock' style={{width: '60%', borderRadius: 0, height: '100%'}}></div> 
-                                                    <div className='greyBlock' style={{width: '60%', borderRadius: 0, height: '100%'}}></div>
+                                                    <div className='greyBlock' style={{backgroundImage: `url("${each.image[1].src}")`, backgroundSize: 'cover', backgroundPosition: 'center', width: '60%', borderRadius: 0, height: '100%'}}></div> 
+                                                    <div className='greyBlock' style={{backgroundImage: `url("${each.image[2].src}")`, backgroundSize: 'cover', backgroundPosition: 'center', width: '60%', borderRadius: 0, height: '100%'}}></div>
                                                 </div>
 
                                                 <div className='grid-row'>
-                                                    <div className='greyBlock' style={{width: '65%', borderRadius: 0, height: '100%'}}></div> 
-                                                    <div className='greyBlock' style={{width: '65%', borderRadius: 0, height: '100%'}}></div> 
+                                                    <div className='greyBlock' style={{backgroundImage: `url("${each.image[3].src}")`, backgroundSize: 'cover', backgroundPosition: 'center', width: '65%', borderRadius: 0, height: '100%'}}></div> 
+                                                    <div className='greyBlock' style={{backgroundImage: `url("${each.image[4].src}")`, backgroundSize: 'cover', backgroundPosition: 'center', width: '65%', borderRadius: 0, height: '100%'}}></div> 
                                                 </div>
                                             </div>
                                             :

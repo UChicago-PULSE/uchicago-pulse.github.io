@@ -234,4 +234,6 @@
 .image {
     margin: 1rem;
     max-width: 50%;
+    min-width: 20%;
+    height: auto;
 }
