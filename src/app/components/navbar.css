@@ -5,7 +5,6 @@
         &.mobile {
             display: none;
         }
-
         
     }
 
@@ -111,6 +110,7 @@
         position: sticky;
         top: 0;
         left: 0;
+        z-index: 100;
         /* margin-top: 1rem; */
 
         .links{
@@ -120,14 +120,14 @@
 
     .logo {
         transform: none;
-        height: 2rem;
         mix-blend-mode: lighten;
-        aspect-ratio: 1/1;
-        width: 3rem;
+        /* aspect-ratio: 1/1; */
+        width: 4rem;
+        height: auto;
     
         &.ucsp {
             display: none;
-            padding-left: 1rem;
+            /* padding-left: 1rem; */
         }
 
         &.ucphoenix {

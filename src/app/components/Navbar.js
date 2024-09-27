@@ -88,6 +88,7 @@ const Navbar = () => {
                         className='flogo'
                         src={b_uclogo}
                         alt="UCSP Logo"
+                        width={225}
                     />
                 </Link>
                 <Link href="https://docs.google.com/forms/d/1jiXOX33-p-h8lLMY3VJhZ5mswJuqcpZ9GpILEmz8uT0/viewform" target='_blank' className='footlink' onClick={handleMenu}>
