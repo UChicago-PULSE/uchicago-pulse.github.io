@@ -7,6 +7,7 @@ function Inverted(props) {
     const imgGreyRound = props.imgChange.round;
     const imgWidth = props.imgWidth;
     const imgHeight = props.imgHeight;
+    const imgStyles = props.imgStyles;
     
 
 
@@ -75,7 +76,7 @@ function Inverted(props) {
                                                 className="image"
                                                 width={imgWidth}
                                                 height={imgHeight}
-                                                style={{objectFit: 'cover'}}
+                                                style={{...imgStyles, objectFit: 'cover', }}
                                             />
                                         }
 

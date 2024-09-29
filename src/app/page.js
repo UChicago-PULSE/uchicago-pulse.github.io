@@ -12,6 +12,10 @@ import spacePortimg from '../../public/spaceport.svg';
 import spacePortback from '../../public/spaceportback.svg';
 import { Poppins } from 'next/font/google';
 
+import ucw_carnival from '../../public/ucwsteamcarnival.jpg';
+import urs from '../../public/urs.png';
+import sedsspaceforall from '../../public/sedsspaceforall.png';
+
 const pop = Poppins({ subsets: ['latin'], weight: ['600', '700'], style: ['italic', 'normal']});
 
 
@@ -50,28 +54,31 @@ export default function Home() {
   let inverted_data = [
     {
         title: "UCW Campus STEAM Carnival",
-        image: "block",
+        image: ucw_carnival,
         subTitle: "",
         description: "On April 18th, members of UCSP hosted a booth at the Woodlawn Campus of the University of Chicago Charter Schools. There, we presented and engaged with 6th-12th grade students about the various aspects of PULSE-A’s mission, engaging with students to familiarize and inspire them towards considering STEAM education.",
         imageWidth: "",
+        imageHeight: "200px",
         special: false,
         left: true,
     }, 
     {
         title: "UChicago Research Symposium",
-        image: "block",
+        image: urs,
         subTitle: "",
         description: "Two groups of PULSE-A members presented at the 2024 Undergraduate Research Symposium hosted by the UChicago College Center for Research and Fellowships. Seth Knights, Vincent Redwine, and Graydon Schulze-Kalt, presented on the Optical Payload and the mission ConOps. Logan Hanssler, Juan Prieto, and Alex Dennis, presented on the Optical Ground Station. ",
         imageWidth: "",
+        imageHeight: "200px",
         special: false,
         left: false,
     }, 
     {
         title: "SEDS-USA Space for All Challenge",
-        image: "block",
+        image: sedsspaceforall,
         subTitle: "",
         description: "We are excited to share that PULSE-A won second place in the challenge, earning $7.5k towards R&D for the project. As part of the challenge, UCSP will further our outreach efforts on the south side of Chicago, using our telescope to hold observation nights and host space-related events.",
         imageWidth: "",
+        imageHeight: 200,
         special: false,
         left: true,
     }
@@ -101,7 +108,7 @@ export default function Home() {
             </div>
             <div className={styles.line}></div>
             <p className={styles.para}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                We are The University of Chicago’s premier undergraduate aerospace organization, dedicated to promoting space education and engineering both within the University and beyond. As a chapter of the Students for the Exploration and Development of Space (SEDS), we believe that providing students with an opportunity to work on interdisciplinary, hands-on, and team-based projects is key to fostering the development of future leaders in and around the space industry. 
             </p>
             <h1 className={styles.cardTitle}>Current Projects</h1>
             <Cards cards={card_data}/>
@@ -112,7 +119,7 @@ export default function Home() {
                 <p>Community outreach is core to UCSP's mission.</p>
                 <p style={{marginTop:'-1.6rem'}}>Read about our recent events below.</p>
             </div>
-            <Inverted data={inverted_data} border={true} more={true} imgChange={{width: '80vw', round: '2rem'}}/>
+            <Inverted data={inverted_data} border={true} more={true} imgHeight={400} imgStyles={{aspectRatio: '4/3', }} imgChange={{width: '80vw', round: '2rem'}}/>
         </div>
     </>
   );

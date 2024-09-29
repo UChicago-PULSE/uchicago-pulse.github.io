@@ -197,10 +197,10 @@
         font-weight: 200;
         font-size: 1.5rem;
         display: flex;
-        text-align: right;
+        text-align: center;
         width: 80%;
         flex-wrap: wrap;
-        margin-right: -10rem;
+        /* margin-right: -10rem; */
         margin-top: 4rem;
     }
     

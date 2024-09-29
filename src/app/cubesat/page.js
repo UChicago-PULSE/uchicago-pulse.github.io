@@ -126,7 +126,7 @@ function CubeSat() {
                 <div className={styles.block} id={styles.spaces}>
                     <h1 className={styles.subTitle}>Our Spaces</h1>
                     <div className={styles.inverted}>
-                        <Inverted data={inverted_data} border={false} width='' imgWidth={500} imgChange={{width: '180vw', round: '0rem', bold: '700'}}/>
+                        <Inverted data={inverted_data} border={false} imgStyles={{minWidth: 'auto'}} width='' imgWidth={"500px"} imgChange={{width: '180vw', round: '0rem', bold: '700'}}/>
                     </div>
                 </div>
 
