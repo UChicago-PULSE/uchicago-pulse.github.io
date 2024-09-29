@@ -81,7 +81,7 @@ export default function Home() {
     <>
         <div className={styles.title}>
             <h1 className={`${styles.main} ${pop.className}`}>PULSE-A</h1>
-            <h4 className={styles.sub}>UCHICAGO'S FIRST SATELLITE</h4>
+            <h4 className={styles.sub}>UCHICAGO'S FIRST CUBESAT</h4>
             <button className={styles.button}>^</button>
             <div className={styles.imgContainer}>
                 <Image 
