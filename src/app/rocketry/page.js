@@ -8,7 +8,7 @@ function Rocketry() {
             title: "High Power Rocketry",
             image: "block",
             subTitle: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+            description: "In partnership with the Northern Illinois Rocketry Association (NIRA) and the National Association of Rocketry (NAR), students learn about, design, and build L1 and L2 class high-powered rockets. Students then test fly these rockets at launch sites across rural Illinois, where they receive a certification upon completion. This dually enables them to buy and fly larger rocket engines while providing the invaluable pedigree to be applied to other rocketry laboratory projects.",
             imageWidth: "",
             special: true,
             left: true,
@@ -17,7 +17,7 @@ function Rocketry() {
             title: "Spaceport America",
             image: "block",
             subTitle: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+            description: "From June 9 - 14th 2025, UCSP will be competing in the intercollegiate rocketry competition in the 10k off the shelf category. The team is split into three primary subteams: Payload, Avionics/Recovery, and Structure/Propulsion. Under the guidance of NIRA a L3 class high power rocket will be built for the competition.",
             imageWidth: "",
             special: false,
             left: false,
@@ -31,7 +31,7 @@ function Rocketry() {
                 <div className={styles.greyBlock}></div> 
 
                 <p className={styles.subDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. </p>
+                The UChicago Space Program’s Rocketry Laboratory is split into two projects: High Powered Rocketry certification and Spaceport America Cup Launch Competition. Developed and led entirely by UChicago undergraduates with advisors from the Northern Illinois Rocketry Association and alums, this pipeline ensures students gain the hands-on rocketry experience they need to compete competitively in launch competitions. </p>
 
                 <div className={styles.block}></div>
                 <div className={styles.block}></div>

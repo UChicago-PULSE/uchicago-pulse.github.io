@@ -53,7 +53,7 @@ function CubeSat() {
             img: "", 
             backImg: "",
             subtitle: "Early Concept Development",
-            details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.",
+            details: "PULSE-Q is the future of UCSP’s CubeSat Laboratory. The intended mission objective is to use polarization of light to encrypt data streams.",
             link: false
         },
       ]
@@ -62,7 +62,7 @@ function CubeSat() {
             title: "CubeSat Lab",
             image: "block",
             subTitle: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+            description: "Thanks to the generosity of the UChicago Department of Physics, the PULSE-A team has an official CubeSat Laboratory workspace in the Kersten Physics Teaching Center. The Cubesat Laboratory is the first laboratory managed entirely by undergraduates at the University of Chicago, representing a huge milestone for UCSP and the University in providing opportunities to undergraduates.",
             imageWidth: "",
             special: false,
             left: true,
@@ -71,7 +71,7 @@ function CubeSat() {
             title: "Zhong Lab",
             image: "block",
             subTitle: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+            description: "The PULSE-A Payload department has been utilizing the Zhong Lab in LL2 of Eckhardt Research Center for the development and testing of our payload system, thanks to our advisor Prof. Tian Zhong. As part of this arrangement, PULSE-A can use loaned optical hardware from the lab and lab funds to acquire equipment useful to both the Zhong lab’s research and our own.",
             imageWidth: "",
             special: false,
             left: false,
@@ -83,7 +83,7 @@ function CubeSat() {
             title: "Tian Zhong",
             image: "block",
             subTitle: 'Assistant Professor of Molecular Engineering\r\nUniversity of Chicago, Pritzker School of Molecular Engineering',
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+            description: "Tian Zhong’s research focuses on developing enabling nanophotonic and molecular technologies for building an efficient, global-scale Quantum Internet. As a primary advisor to the PULSE-A Payload Department, Professor Zhong has been indispensable in our understanding, development, and testing of the CubeSat’s optical payload. We are incredibly grateful for our partnership with the Zhong Lab in the Eckhardt Research Center.",
             imageWidth: "",
             special: false,
             left: true,
@@ -92,7 +92,7 @@ function CubeSat() {
             title: "Michael Lembeck",
             image: "block",
             subTitle: "Clinical Associate Professor in Aerospace Engineering\r\n University of Illinois at Urbana Champaign",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos...",
+            description: "Dr. Lembeck is a Clinical Associate Professor of Aerospace Engineering at UIUC and the head of the Laboratory for Advanced Space Sciences at Illinois (LASSI). As Requirements Division Director for the Exploration Systems Mission Directorate at NASA, Dr. Lembeck managed the development of requirements for the Constellation/Orion program. Dr. Lembeck’s experience has been invaluable towards our development of PULSE-A’s Systems Requirements across our engineering departments.",
             imageWidth: "",
             special: false,
             left: false,
@@ -108,10 +108,7 @@ function CubeSat() {
                 <div className={styles.greyBlock}></div> 
 
                 <p className={styles.subDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. 
-                Sed  dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas
-                eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                inceptos himenaeos.</p>
+                The UChicago Space Program’s CubeSat Laboratory is currently centered around the PULSE-A mission. Developed by UCSP undergraduates, this entirely student led initiative intends to demonstrate 10 Mbps polarization-modulated space-to-ground optical communications in a 3U CubeSat form factor. The mission has received endorsement and launch support from NASA through the CubeSat Launch Initiative (CSLI).</p>
 
                 <div className={styles.block}></div>
 
